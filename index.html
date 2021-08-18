@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer> </script>
+</head>
+<body>
+    <form class="todo__container" id="form">
+        <div class="todo__title">What I need to do:</div>
+        <div class="todo__add">
+            <div class="todo__add area">
+                <input 
+                id="input" 
+                class="todo__input"
+                type="text"
+                placeholder="Add what you need to do"
+                autocomplete="off">
+                <button class="todo__button" id="add-todo">Add</button>
+            </div>
+            <ul class="todo__items" id="todos">
+            </ul>
+            
+        </div>
+    </form>
+</body>
+</html>

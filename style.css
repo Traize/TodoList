@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    display: flex;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 98.5vh;
+    background: linear-gradient(115.37deg, #4E64DA 0%,
+    rgba(78, 100, 217, 0.54) 60.67%, 
+    rgba(78, 100, 217, 0.1) 112.01%);   
+}
+form{
+    margin: 3rem auto;
+    max-width: 100%;
+    width: 59rem;
+}
+.todo__container {
+    font-size: 1.5rem;
+    
+  }
+  
+.todo__title {
+    color: white;
+    font-weight: bold;
+    font-size: 8rem;
+    line-height: 104%;
+    text-shadow: 0px 4px 4px
+    rgba(0,0,0,0.25);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+.todo__add {
+    margin-top: 2rem;
+    display: block;
+    align-items: center;
+}
+.area{
+    display: flex;
+    position: relative;
+}
+.todo__input{
+    font-family: "Montserrat";
+    padding: 0 7.5rem 0 1rem;
+    color: #636262;
+    font-size: 1.5rem;
+    width: 100%;
+    display: block;
+    height: 3rem;
+    border: none;
+}
+
+input{
+    outline: none;
+}
+.todo__input:focus::-webkit-input-placeholder{
+    color: transparent;
+    border: none;
+}
+
+.todo__button{
+    position: absolute;
+    right: 0rem;
+    padding: 0.65rem 1.85rem;
+    background: transparent;
+    border: none;
+    font-size: 1.4rem;
+    color: #636262;   
+}
+.todo__button:hover{
+    background: #81818170;;
+    transition:  background 0.2s;  
+}
+.todo__button:active{
+    background: #4e63da65;
+    color: #e5e5e5;
+    text-shadow: 0px 4px 4px
+    rgba(0,0,0,0.25);  
+}
+.todo__button_delete{
+    position: absolute;
+    right: 0rem;
+    margin-top: 1px;
+    padding: 0.62rem 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.4rem;
+    color: #636262;
+}
+.todo__button_delete:active{
+    background: #4e63da65;
+    color: #e5e5e5;
+    text-shadow: 0px 4px 4px
+    rgba(0,0,0,0.25);  
+}
+.todo__button_delete:hover{
+    background: #81818170;;
+    transition:  background 0.2s;  
+}
+.todo__items{
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.todo__items li{
+    display: flex;
+    border-top: 1px solid #e5e5e5;
+    align-items: center;
+    color: #636262;
+    background-color: white;
+    width: 100%;
+    min-height: 3rem;
+    height: fit-content;
+    padding: 0.5rem 7.5rem 0.5rem 1rem;
+    max-width: 100%;
+    word-break: break-all;
+    cursor:pointer;
+}
+
+.todo__items li.completed{
+    text-decoration: line-through;
+    color: #4E64DA65;
+}
+  
+
